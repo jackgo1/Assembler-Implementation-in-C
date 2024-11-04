@@ -1,0 +1,20 @@
+.entry LIST
+.extern W
+MAIN: add @r5, @r2
+LOOP: prn 10
+GH: sub @r3, @r7
+STR: .string "abcde"
+LIST: .data 6, -9
+inc @r4
+mov @r5, W
+sub @r1, @r6
+bne END
+cmp THJ, -6
+bne END
+dec K
+.entry MAIN
+sub LOOP , @r5
+END: stop
+.entry K
+K: .data 21
+.extern THJ
